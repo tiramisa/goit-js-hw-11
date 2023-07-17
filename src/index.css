@@ -31,7 +31,7 @@ input {
   color: #9E9C9C;
 }
 
-button {
+.search {
   position: absolute;
   top: 0;
   right: 0px;
@@ -43,9 +43,18 @@ button {
   cursor: pointer;
 }
 
-button:before {
+.search:before {
   content: "\f002";
   font-family: FontAwesome;
   font-size: 16px;
   color: #F9F0DA;
+}
+
+.container {
+  text-align: center;
+  background: linear-gradient(180deg, #A3D0C3, #58cedb);
+}
+
+.is-hidden {
+  display: none;
 }

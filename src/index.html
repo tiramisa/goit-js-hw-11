@@ -7,16 +7,24 @@
   <title>Page title</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./index.css" />
-  <script type="module" src="./index.js"></script>
 </head>
 
 <body>
-  <div class="mint">
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Искать здесь..." />
-      <button type="submit"></button>
-    </form>
-  </div>
+  <section class="gallery-section">
+    <div class="container mint">
+
+      <form class="search-form js-search-form" id="search-form">
+        <input type="text" name="user-search-query" class="search-input" autocomplete="off"
+          placeholder="Искать здесь..." />
+        <button type="submit" class="search"></button>
+      </form>
+      <ul class="gallery js-gallery list"></ul>
+      <div class="target-element"></div>
+      <button type="button" class="load-more js-load-more is-hidden">Загрузить больше</button>
+    </div>
+  </section>
+  <script src="./js/gallery.js" type="module"></script>
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
